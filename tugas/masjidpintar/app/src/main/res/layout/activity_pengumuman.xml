@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PengumumanActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="40sp"
+        android:background="#FADDAF"
+        app:cardBackgroundColor="#FADDAF"
+        android:layout_marginTop="-40sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38sp"
+            android:layout_marginRight="38sp"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="23dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pengumuman Masjid"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/sniglet"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/mosque"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="0sp"
+                app:cardElevation="5dp"
+                android:layout_marginBottom="23dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp">
+
+                    <ImageView
+                    android:id="@+id/list1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/list"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7sp"/>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/list1"
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Judul Pengumuman : "
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/sniglet"/>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/list1"
+                        android:layout_below="@+id/name"
+                        android:id="@+id/txt1pengumuman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hello World!"
+                        android:textColor="#000"
+                        android:fontFamily="@font/sniglet"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="0sp"
+                app:cardElevation="5dp"
+                android:layout_marginBottom="23dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp">
+
+                    <ImageView
+                        android:id="@+id/list2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/list"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="7sp"/>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/list2"
+                        android:id="@+id/isi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Isi pengumuman : "
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/sniglet"/>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/list2"
+                        android:layout_below="@+id/isi"
+                        android:id="@+id/txt2pengumuman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hello World!"
+                        android:textColor="#000"
+                        android:fontFamily="@font/sniglet"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38sp"
+        android:layout_marginRight="38sp"
+        android:layout_marginTop="23dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ganti Pengumuman"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:fontFamily="@font/sniglet"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0sp"
+            app:cardBackgroundColor="#CCCCCC"
+            app:cardElevation="5dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="23sp">
+
+            <EditText
+                android:id="@+id/judul_pengumuman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Judul Pengumuman"
+                android:layout_margin="10sp"
+                android:fontFamily="@font/sniglet"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0sp"
+            app:cardBackgroundColor="#CCCCCC"
+            app:cardElevation="5dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="23sp">
+
+            <EditText
+                android:id="@+id/isi_pengumuman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Isi Pengumuman"
+                android:fontFamily="@font/sniglet"
+                android:layout_margin="10sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnsimpanpengumuman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FADDAF"
+                app:cardBackgroundColor="#FADDAF"
+                app:cardCornerRadius="5sp"
+                app:cardElevation="3sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Simpan"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/sniglet"
+                    android:textSize="15dp"
+                    android:layout_margin="10sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnkembalipengumuman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FADDAF"
+                app:cardBackgroundColor="#FADDAF"
+                app:cardCornerRadius="5sp"
+                app:cardElevation="3sp"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kembali"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/sniglet"
+                    android:textSize="15dp"
+                    android:layout_margin="10sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
